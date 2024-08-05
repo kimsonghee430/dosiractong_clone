@@ -5,6 +5,7 @@
 @import url("service.css");
 @import url("about.css");
 @import url("business.css");
+@import url("footer.css");
 
 
 *{
@@ -52,5 +53,34 @@ body{
     width: 100%;
     max-width: 1420px;
     margin: 0 auto;
-    background-color: burlywood;
+    /* background-color: burlywood; */
   }
+
+/* gotop */
+.gotop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: #3065e1;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 28px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.gotop.active{
+    /* bottom: 20px; */
+    visibility: visible;
+    opacity: 1;
+}
+
+.gotop.active-footer{
+    bottom: 320px;
+}

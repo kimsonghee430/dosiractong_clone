@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-    const swBesiness = new Swiper(".sw-business", {
+    const swBusiness = new Swiper(".sw-business", {
       slidesPerView: 1,
       spaceBetween: 0,
       breakpoints: {
@@ -11,4 +11,9 @@ window.addEventListener("load", function () {
         },
       },
     });
+    // business-modal 기능
+    const businessModal = this.document.querySelector(".business-modal")
+    businessModal.addEventListener("click",function(){
+      businessModal.style.display = "none"
+    })
   });
